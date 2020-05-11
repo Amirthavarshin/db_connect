@@ -1,7 +1,7 @@
 let mongoose  = require("./mongoconfig");
 mongoose = mongoose.mongoose
 
-const MenuSchema = new mongoose.Schema({ ProductName: String, ProductId:Number, Description: String, Units:Number});
+const MenuSchema = new mongoose.Schema({ ProductName: String, ProductId:Number, Description: String, Units:Number, Price:Number});
 const Menu = mongoose.model('tvs', MenuSchema);
 
 
